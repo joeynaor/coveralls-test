@@ -1,10 +1,6 @@
-node_modules/
-coverage/
-lib-cov/
-.nyc_output/
-coverage.json
-npm-debug.log
-
-# Webstorm IDE
-.idea
-.DS_Store
+node_modules
+build
+coverage
+dist.zip
+ts_build
+.nyc_output

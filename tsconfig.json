@@ -1,22 +1,27 @@
 {
   "compilerOptions": {
-    "target": "es5",                          
-    "module": "commonjs",                    
-    "lib": ["es6"],                     
+    "module": "commonjs",
     "allowJs": true,
-    "outDir": "./build",                          
-    "rootDir": "./src",
-    "strict": true,         
+    "target": "es5",
     "noImplicitAny": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "sourceMap": true
+    "moduleResolution": "node",
+    "lib": ["dom", "es2015.promise", "es2015"]
   },
+  "typeRoots": [
+    "./node_modules/@types"
+  ],
+  "types": [
+    "jasmine",
+    "node",
+    "mocha",
+    "chai"         
+  ],
+  "include": [
+    "calculator/ts/**/*.ts"
+  ],
   "exclude": [
-    "node_modules",
-    "build",
-    "jest.config.js",
     "coverage",
-    "__tests__/test.js"
+    "node_modules",
+    "!node_modules/@types"
   ]
 }
